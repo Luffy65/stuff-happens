@@ -1,0 +1,67 @@
+/* Timer Component Styles */
+.fixed-timer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.9);
+  border: 3px solid #28a745; /* Default green */
+  border-radius: 15px;
+  padding: 15px;
+  color: white !important;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  min-width: 120px;
+  text-align: center;
+}
+
+.fixed-timer.danger {
+  border-color: #dc3545;
+}
+
+.fixed-timer.warning {
+  border-color: #ffc107;
+}
+
+.fixed-timer.success {
+  border-color: #28a745;
+}
+
+.timer-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+.timer-circle.danger {
+  background: rgba(220, 53, 69, 0.2);
+}
+
+.timer-circle.warning {
+  background: rgba(255, 193, 7, 0.2);
+}
+
+.timer-circle.success {
+  background: rgba(40, 167, 69, 0.2);
+}
+
+.timer-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* moves the element to the center */
+}
+
+.timer-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: white !important;
+}

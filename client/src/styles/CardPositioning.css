@@ -1,0 +1,100 @@
+.card-positioning-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  padding: 20px;
+  min-height: 250px;
+  background: transparent;
+  border-radius: 12px;
+  border: 0px dashed rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.player-card-slot {
+  min-width: 180px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.player-card-slot.shift-left {
+  transform: translateX(-15px);
+}
+
+.player-card-slot.shift-right {
+  transform: translateX(15px);
+}
+
+.drop-zone {
+  min-width: 40px;
+  height: 220px;
+  border: 2px dashed transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.drop-zone:hover {
+  background: linear-gradient(135deg, #007bff20 0%, #0056b330 100%);
+  border-color: #007bff;
+  transform: scaleY(1.1) scaleX(1.5);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.drop-zone.selected {
+  background: linear-gradient(135deg, #28a74550 0%, #1e7e3460 100%);
+  border-color: #28a745;
+  transform: scaleY(1.1) scaleX(1.5);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+}
+
+.drop-zone-indicator {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6c757d;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.drop-zone:hover .drop-zone-indicator,
+.drop-zone.selected .drop-zone-indicator {
+  opacity: 1;
+  color: #fff;
+}
+
+.current-card-preview {
+  margin: 20px auto;
+  width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid #ffc107;
+  border-radius: 12px;
+  background: white;
+}
+
+.current-card-preview .card-img-top {
+  border-radius: 9px 9px 0 0;
+}
+
+.position-confirm-button {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button horizontally */
+  z-index: 1; /* Otherwise, the footer overlaps on it */
+}
+
+.player-card {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.player-card:hover {
+  border-color: #007bff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
