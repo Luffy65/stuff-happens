@@ -4,6 +4,8 @@
 
 The project is a single-player version of the "stuff happens" board game, with an AI theme. The card indexes are not perfectly balanced according to my personal views. Also, some of them are serious scenarios, others are more humorous, added to reach the 50 cards threshold.
 
+The project can be installed and run with ease, running the client with `npm run dev` and the server with `node index.mjs`.
+
 ## React Client Application Routes
 
 - Route `/`: Home page with game description, rules, and "Play" button. Accessible to all users (both anonymous and logged-in).
