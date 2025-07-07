@@ -1,8 +1,8 @@
 # Exam #1: "Game of Misfortune"
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/uNTgnFHD)
-
 ## Student: s345249 Caruso Antonio Pio
+
+The project is a single-player version of the "stuff happens" board game, with an AI theme. The card indexes are not perfectly balanced according to my personal views. Also, some of them are serious scenarios, others are more humorous, added to reach the 50 cards threshold.
 
 ## React Client Application Routes
 
@@ -70,7 +70,7 @@
 
 - **Home** - Landing page explaining game concept, rules, and providing entry point to start playing.
 - **Game** - Core gameplay component handling card placement, timers, rounds, and game state management.
-- **History** - Displays user's completed games with statistics, initial cards, and round-by-round details.
+- **History** - Displays user's completed games with statistics, initial cards, and round-by-round details. Does not show misfortune indexes to avoid the player memorizing it.
 - **Login** - User authentication form with validation and error handling.
 - **NotFound** - Custom 404 error page with themed messaging and navigation options.
 
